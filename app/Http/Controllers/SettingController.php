@@ -158,7 +158,7 @@ class SettingController extends Controller
                 ]);
                 
             }
-            /** SETTING .ENV VARS STARTS **/
+            /** SETTING .ENV VARS STARTS **//
             if (isset($_SERVER['REQUEST_SCHEME'])) {
                 $urll = "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}";
             } else {
