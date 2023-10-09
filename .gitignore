@@ -1,4 +1,5 @@
 /vendor
+/backup
 /node_modules
 /public/storage
 /storage/*.key
