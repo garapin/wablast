@@ -1,0 +1,2 @@
+<label for="message" class="form-label">Text Message</label>
+<textarea type="text" id="message" name="message" class="form-control" id="keyword" cols="30" rows="15" required></textarea><?php /**PATH /Users/iwanbudihalim/Documents/code/docker/wa-gateway/extended-whatsapp-gateway-v-550-multi-device/Code/resources/views/ajax/messages/formtext.blade.php ENDPATH**/ ?>
