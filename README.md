@@ -1,1 +1,0 @@
-Garapin WhatsAPP Gateway
