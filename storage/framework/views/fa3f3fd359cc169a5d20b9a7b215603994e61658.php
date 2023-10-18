@@ -5,7 +5,7 @@
                    <img src="<?php echo e(asset('assets/images/logo-icon.png')); ?>" class="logo-icon" alt="logo icon">
                </div>
                <div>
-                   <h4 class="logo-text">MPWA -v5</h4>
+                   <h4 class="logo-text">WA Blaster</h4>
                </div>
                <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
                </div>
@@ -99,16 +99,6 @@
                    
                <?php endif; ?>
 
-               
-
-               <li class=" <?php echo e(url()->current() == route('rest-api') ? 'mm-active' : ''); ?>">
-                   <a class="" href="<?php echo e(route('rest-api')); ?>">
-                       <div class="parent-icon"><i class="bi bi-code-square"></i>
-                       </div>
-                       <div class="menu-title">API Docs</div>
-                   </a>
-               </li>
-               
 
                
                <?php if(Auth::user()->level == 'admin'): ?>
@@ -121,9 +111,6 @@
                            <div class="menu-title">Admin</div>
                        </a>
                        <ul>
-                           <li class="<?php echo e(request()->is('admin.settings') ? 'active' : ''); ?>">
-                               <a href="<?php echo e(route('admin.settings')); ?>"><i class="bi bi-circle"></i>Setting Server</a>
-                           </li>
                            <li class="<?php echo e(request()->is('admin.manage-users') ? 'active' : ''); ?>">
                                <a href="<?php echo e(route('admin.manage-users')); ?>">
                                 <i class="bi bi-circle"></i>

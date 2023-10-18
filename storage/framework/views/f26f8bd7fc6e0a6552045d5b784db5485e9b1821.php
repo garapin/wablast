@@ -2,8 +2,6 @@
 <html class="semi-dark " lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 
 
-
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -36,7 +34,7 @@
     
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>" />
 
-    <title><?php echo e($title); ?> | MPWA Multi device version</title>
+    <title><?php echo e($title); ?> | GarapinCloud WA Blaster</title>
 </head>
 
 <body>

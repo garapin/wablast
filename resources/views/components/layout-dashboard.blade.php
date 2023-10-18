@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html class="semi-dark " lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-{{-- 
-    
-Copyright By Ilman Sunanuddin, M pedia
-Email : Ilmansunannudin2@gmail.com 
-website : https://m-pedia.co.id
-Whatsap : 6282298859671
-------------------------------------------------------------------
-You are not allowed to share or sell this source code without permission.
---}}
-
 
 
 <head>
@@ -44,7 +34,7 @@ You are not allowed to share or sell this source code without permission.
     {{-- csrf --}}
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title>{{ $title }} | MPWA Multi device version</title>
+    <title>{{ $title }} | GarapinCloud WA Blaster</title>
 </head>
 
 <body>

@@ -56,7 +56,7 @@
                                         <button class="btn btn-primary" type="button" disabled>
                                             <span class="spinner-grow spinner-grow-sm" role="status"
                                                 aria-hidden="true"></span>
-                                           Witing For node server.. 
+                                           Waiting For node server.. 
                                         </button>
                                     <?php endif; ?>
                                 </div>

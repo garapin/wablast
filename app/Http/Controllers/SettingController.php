@@ -43,9 +43,9 @@ class SettingController extends Controller
                 : ($request->typeServer === 'hosting'
                     ? url('/')
                     : 'http://localhost:' . $request->portnode);
-        setEnv('TYPE_SERVER', $request->typeServer);
-        setEnv('PORT_NODE', $request->portnode);
-        setEnv('WA_URL_SERVER', $urlnode);
+			setEnv('TYPE_SERVER', $request->typeServer);
+			setEnv('PORT_NODE', $request->portnode);
+			setEnv('WA_URL_SERVER', $urlnode);
         return back()->with('alert', [
             'type' => 'success',
             'msg' => 'Success Update configuration!',
