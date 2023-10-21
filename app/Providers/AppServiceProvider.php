@@ -26,7 +26,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 		if ($this->app->environment('production')) {
+<<<<<<< HEAD
 			\URL::forceScheme('https');
+=======
+			URL::forceScheme('https');
+>>>>>>> fa82136 (commit AppServiceProvider. hilangkan \ pada URL)
 		}
        Paginator::useBootstrap();
        Model::preventLazyLoading(true);
