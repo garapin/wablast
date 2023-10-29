@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="semi-dark " lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
+<html class="dark-theme" lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 
 
 <head>

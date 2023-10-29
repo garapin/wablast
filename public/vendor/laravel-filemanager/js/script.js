@@ -33,18 +33,7 @@ $.fn.fab = function (options) {
 
 $(document).ready(function () {
   $('#fab').fab({
-    buttons: [
-      {
-        icon: 'fas fa-upload',
-        label: lang['nav-upload'],
-        attrs: { id: 'upload' }
-      },
-      // {
-      //   icon: 'fas fa-folder',
-      //   label: lang['nav-new'],
-      //   attrs: {id: 'add-folder'}
-      // }
-    ]
+    
   });
 
   actions.reverse().forEach(function (action) {
