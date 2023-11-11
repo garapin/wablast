@@ -32,6 +32,7 @@ class WhatsappServiceImpl implements WhatsappService {
             'delay' => 1,
         ]
     );
+	echo($res->body());
     return json_decode($res->body());
   }
 

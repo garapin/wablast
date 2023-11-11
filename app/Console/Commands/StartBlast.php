@@ -75,6 +75,7 @@ class StartBlast extends Command
                 $blastdata[] = [
                     'receiver' => $blast->receiver,
                     'message' => $blast->message,
+					'blast_id' => $blast->id,
                 ];
             }
             $data = [
@@ -83,7 +84,6 @@ class StartBlast extends Command
                 'campaign_id' => $campaign->id,
                 'sender' => $campaign->device->body,
             ];
-
          
                 $results = $this->wa->startBlast($data);
                 $campaign->update(['status' => 'processing']);

@@ -140,7 +140,7 @@ const handleResponSendMessage = (result, res, msg = null) => {
   }
   return res.send({
     status: false,
-    message: "Check your whatsapp connection",
+    message: "Check your whatsapp connection - index.js",
   });
 };
 // end handle respon send message

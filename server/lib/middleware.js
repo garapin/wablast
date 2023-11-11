@@ -28,7 +28,7 @@ const checkConnectionBeforeBlast = async (req, res, next) => {
     if (!check) {
         return res.send({
             status: false,
-            message: "Check your whatsapp connection",
+            message: "Check your whatsapp connection on middleware.js",
         });
     }
 
