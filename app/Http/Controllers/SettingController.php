@@ -167,7 +167,7 @@ class SettingController extends Controller
 				// Modify the first part (subdomain)
 				$parts[0] = $parts[0] . 'gateway';
 				// Reassemble the full domain
-				$subdomain = implode('.', $parts);
+				//$subdomain = implode('.', $parts);
             } else {
                 $urll = $_SERVER['HTTP_HOST'];
             }
@@ -179,7 +179,7 @@ class SettingController extends Controller
             $env['DB_PASSWORD'] = $db_params['password'];
 			*/
             $env['APP_URL'] = $urll;
-			$env['WA_URL_SERVER'] = $subdomain;
+			//$env['WA_URL_SERVER'] = $subdomain;
             $env['APP_INSTALLED'] = 'true';
             /*if($request->input('licensekey') != null){
                 $env['LICENSE_KEY'] = $request->input('licensekey');
