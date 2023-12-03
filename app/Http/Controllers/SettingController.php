@@ -163,11 +163,11 @@ class SettingController extends Controller
             if (isset($_SERVER['REQUEST_SCHEME'])) {
                 $urll = "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}";
 				$host = $_SERVER['HTTP_HOST'];
-				//$parts = explode('.', $host);
+				$parts = explode('.', $host);
 				// Modify the first part (subdomain)
-				//$parts[0] = $parts[0] . 'gateway';
+				$parts[0] = $parts[0] . 'gateway';
 				// Reassemble the full domain
-				//$subdomain = implode('.', $parts);
+				$subdomain = implode('.', $parts);
             } else {
                 $urll = $_SERVER['HTTP_HOST'];
             }
@@ -179,7 +179,7 @@ class SettingController extends Controller
             $env['DB_PASSWORD'] = $db_params['password'];
 			*/
             $env['APP_URL'] = $urll;
-			//$env['WA_URL_SERVER'] = $subdomain;
+			$env['WA_URL_SERVER'] = $subdomain;
             $env['APP_INSTALLED'] = 'true';
             /*if($request->input('licensekey') != null){
                 $env['LICENSE_KEY'] = $request->input('licensekey');
