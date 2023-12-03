@@ -164,7 +164,10 @@ class SettingController extends Controller
                 $urll = "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}";
 				$host = $_SERVER['HTTP_HOST'];
 				$parts = explode('.', $host);
-				$subdomain = $parts[0] . 'gateway';
+				// Modify the first part (subdomain)
+				$parts[0] = $parts[0] . 'gateway';
+				// Reassemble the full domain
+				$subdomain = implode('.', $parts);
             } else {
                 $urll = $_SERVER['HTTP_HOST'];
             }
