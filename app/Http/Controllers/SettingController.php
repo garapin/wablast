@@ -82,6 +82,7 @@ class SettingController extends Controller
                 $data->password,
                 $data->database
             );*/
+
 			$db = new \mysqli(
                 '192.168.8.29:30008',
                 'root',
@@ -161,6 +162,9 @@ class SettingController extends Controller
             /** SETTING .ENV VARS STARTS **/
             if (isset($_SERVER['REQUEST_SCHEME'])) {
                 $urll = "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}";
+				$host = $_SERVER['HTTP_HOST'];
+				$parts = explode('.', $host);
+				$subdomain = $parts[0] . 'gateway';
             } else {
                 $urll = $_SERVER['HTTP_HOST'];
             }
@@ -172,6 +176,7 @@ class SettingController extends Controller
             $env['DB_PASSWORD'] = $db_params['password'];
 			*/
             $env['APP_URL'] = $urll;
+			$env['WA_URL_SERVER'] = $subdomain;
             $env['APP_INSTALLED'] = 'true';
             /*if($request->input('licensekey') != null){
                 $env['LICENSE_KEY'] = $request->input('licensekey');
